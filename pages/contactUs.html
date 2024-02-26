@@ -7,5 +7,51 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" href="../favicon.ico" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="">About LTS</a></li>
+          <li><a href="">Our Menu</a></li>
+          <li><a href="">Store Hours</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <figure>
+        <img
+          src="../img/tacos_close_up_400x260.png"
+          alt="Tacos close up shot"
+        />
+        <figcaption>Little Taco Shop Tacos</figcaption>
+      </figure>
+      <section>
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="GET">
+          <fieldset>
+            <legend>Send Us A Message</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="fullname" id="name" placeholder="your name"> <br>
+            <label for="email">Email:</label>
+            <input type="email" name="mail" id="email" placeholder="your email"> <br>
+            <label for="msg">Your Message:</label> <br>
+            <textarea name="message" id="msg" cols="30" rows="10" placeholder="type your Message here "></textarea> <br>
+          </fieldset>
+          <button type="submit">Send</button>
+          <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+          <button type="reset">Reset</button>
+        </form>
+      </section>
+      <section>
+        <h2>Our Location</h2>
+      </section>
+      <a href="#">Back To Top</a>
+      <hr />
+    </main>
+    <footer>
+      <p>Copyright &copy; The Little Tacos Shop</p>
+    </footer>
+  </body>
 </html>
